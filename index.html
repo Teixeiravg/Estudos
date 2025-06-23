@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogadores do Vasco da Gama</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #000; /* fundo preto */
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #c8102e; /* vermelho Vasco */
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .player-card {
+      background: #111;
+      border: 2px solid #c8102e;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .player-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(200, 16, 46, 0.6);
+    }
+
+    .player-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #c8102e;
+      margin-bottom: 15px;
+      background: #222;
+      display: inline-block;
+    }
+
+    .player-name {
+      font-size: 1.5rem;
+      color: #c8102e;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .player-desc {
+      font-size: 1rem;
+      color: #ddd;
+      padding: 0 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* Responsividade extra */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .player-card {
+        padding: 15px;
+      }
+      .player-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Club de Regatas Vasco da Gama</h1>
+    <p>Jogadores em destaque</p>
+  </header>
+
+  <main>
+    <section class="player-card">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pablo_Vegetti_2020.jpg"
+        alt="Pablo Vegetti"
+        class="player-img"
+      />
+      <h2 class="player-name">Pablo Vegetti</h2>
+      <p class="player-desc">
+        Atacante argentino que se destacou pelo seu faro de gol e habilidade
+        dentro da área, Pablo Vegetti é um dos principais nomes do Vasco na
+        temporada.
+      </p>
+    </section>
+
+    <section class="player-card">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Philippe_Coutinho_2018.jpg"
+        alt="Philippe Coutinho"
+        class="player-img"
+      />
+      <h2 class="player-name">Philippe Coutinho</h2>
+      <p class="player-desc">
+        Meia-atacante brasileiro conhecido pela sua criatividade, dribles e
+        passes precisos, Coutinho traz experiência internacional ao Vasco da
+        Gama.
+      </p>
+    </section>
+
+    <section class="player-card">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Nuno_Moreira_2023.jpg"
+        alt="Nuno Moreira"
+        class="player-img"
+      />
+      <h2 class="player-name">Nuno Moreira</h2>
+      <p class="player-desc">
+        Jovem promessa do Vasco, Nuno Moreira destaca-se pela velocidade e
+        habilidade no ataque, trazendo dinamismo para o time cruzmaltino.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Club de Regatas Vasco da Gama - Página criada por ChatGPT
+  </footer>
+</body>
+</html>
