@@ -1,0 +1,101 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #000; /* fundo preto */
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #c8102e; /* vermelho Vasco */
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .player-card {
+      background: #111;
+      border: 2px solid #c8102e;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .player-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(200, 16, 46, 0.6);
+    }
+
+    .player-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #c8102e;
+      margin-bottom: 15px;
+      background: #222;
+      display: inline-block;
+    }
+
+    .player-name {
+      font-size: 1.5rem;
+      color: #c8102e;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .player-desc {
+      font-size: 1rem;
+      color: #ddd;
+      padding: 0 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* Responsividade extra */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .player-card {
+        padding: 15px;
+      }
+      .player-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
